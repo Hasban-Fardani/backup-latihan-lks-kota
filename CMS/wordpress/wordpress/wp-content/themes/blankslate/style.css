@@ -1,0 +1,178 @@
+/*
+Theme Name: WPSlate
+Theme URI: https://opencollective.com/blankslate
+Author: Bryan Hadaway
+Author URI: https://hasban-fardani.github.io
+Description: Donate: https://opencollective.com/blankslate. Learn: https://blankslate.me/. BlankSlate is the definitive WordPress boilerplate starter theme. I've carefully constructed the most clean and minimalist theme possible for designers and developers to use as a base to build websites for clients or to build completely custom themes from scratch. Clean, simple, unstyled, semi-minified, unformatted, and valid code, SEO-friendly, jQuery-enabled, no programmer comments, standardized and as white label as possible, and most importantly, the CSS is reset for cross-browser-compatability, with no intrusive visual CSS styles added whatsoever. A perfect skeleton theme. For support and suggestions, go to: https://github.com/bhadaway/blankslate/issues. Thank you.
+Tags: accessibility-ready, one-column, two-columns, custom-menu, featured-images, microformats, sticky-post, threaded-comments, translation-ready
+Version: 2024.1
+Requires at least: 5.2
+Tested up to: 6.5
+Requires PHP: 7.0
+License: GNU General Public License v3 or Later
+License URI: https://www.gnu.org/licenses/gpl.html
+Text Domain: blankslate
+
+BlankSlate WordPress Theme 2011-2024
+BlankSlate is distributed under the terms of the GNU GPL
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #121212;
+    color: white;
+    font-family: Roboto, sans-serif;
+    transition: all .3ms ease-in;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+#menu > div > ul > li.page_item > a {
+    color: black;
+}
+
+#wrapper {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+#header, #container, #footer {
+    padding: 10px 15px;      
+} 
+
+#header { 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#headerCollapse {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: fit-content;
+    background-color: transparent;
+    color: white;
+    border: none;
+}
+
+#menu {
+    display: none;
+}
+
+#menu > div > ul > li > a {
+    display: block;
+    padding: 5px 15px;
+}
+
+#menu > div > ul > li > a:hover {
+    background-color: rgb(22, 22, 22);
+    color: white;
+}
+
+.menu > ul {
+    gap: 15px;
+    list-style: none;
+    padding: 5px;
+    background-color: white;
+}
+
+.page_item > a {
+    color: rgb(60, 140, 215);
+}
+
+.page > header > h1 {
+    text-align: center;
+}
+
+#about-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+#about-address {
+    width: 50%;
+    margin-bottom: 0;
+}
+
+#about-social { 
+    display: flex;
+    gap: 10px;
+}
+
+#site-title > a > span {
+    font-size: xx-large;
+    font-weight: bold;
+}
+
+#container { 
+    flex: 1;
+    display: flex;
+}
+
+#content {
+    width: 100%;
+}
+
+#maps {
+    margin-top: 15px;
+}
+
+#footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: rgb(34, 34, 34);
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 15px;
+    margin-top: 15px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+/* Khusus beranda */
+#post-6 > .entry-content {
+    text-align: center;
+}
+
+
+.wp-block-gallery-1 {
+    margin-top: 30px;
+}
+
+.landscape-galery {
+    
+}
+
+@media only screen and (min-width: 750px) {
+    #headerCollapse {
+        display: none;
+    }
+
+    #header {
+        flex-direction: row;
+        align-items: center;
+    }    
+
+    #menu {
+        display: block;
+    }
+
+    #menu > div > ul {
+        display: flex;
+    }
+}
